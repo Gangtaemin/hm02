@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm02 : christmas card</title>
+    <style>
+      div {
+        display: inline-block;
+        position: absolute; /* 절대 배치 */
+        font-size: 1.6em;
+      }
+      div > p {
+        display: inline-block; /* div의 자식 p */
+        position: absolute; /* 절대 배치 */
+        height: 30px;
+        width: 22px;
+        background: rgb(255, 0, 0);
+      }
+      div > image {
+        display: inline-block;
+        position: absolute;
+      }
+
+      p {
+        padding: 1px;
+        border: 5px solid rgb(203, 125, 248); /*border-width와 border-style 동시 지정 */
+      }
+      #repeat {
+        border-image: url("media/tree.jpg") 30 repeat;
+      }
+      #트리 {
+        z-index: -3;
+      }
+      #카드배경 {
+        position: fixed;
+        z-index: -4;
+        left: 10px;
+        top: 130px;
+        background: y;
+        border: 4px solid rgb(255, 0, 0);
+      }
+      #hm02 {
+        position: fixed;
+        top: 800px;
+        left: 15px;
+        width: 120px;
+        padding: 5px;
+        background: rgb(0, 255, 136);
+        color: rgb(255, 255, 255);
+        font-size: 0.7em;
+      }
+      #box1 {
+        position: fixed;
+        z-index: 2;
+        left: 100px;
+        top: 710px;
+        background: y;
+      }
+      #box2 {
+        position: fixed;
+        z-index: 2;
+        left: 180px;
+        top: 730px;
+        background: y;
+      }
+      #box3 {
+        position: fixed;
+        z-index: 2;
+        left: 260px;
+        top: 740px;
+        background: y;
+      }
+      #box4 {
+        position: fixed;
+        z-index: 2;
+        left: 340px;
+        top: 710px;
+        background: y;
+      }
+      @keyframes textColorAnimation {
+        0% {
+          color: white;
+        }
+        20% {
+          color: black;
+        }
+        40% {
+          color: yellow;
+        }
+        60% {
+          color: springgreen;
+        }
+        80% {
+          color: red;
+        }
+        100% {
+          color: navy;
+        }
+      }
+      span {
+        animation-name: textColorAnimation;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      #fixed {
+        position : fixed;
+        top : 760px;
+        right : 700px;
+        width : 700px;
+        padding : 5px; 
+      }
+    </style>
+    <script></script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3>Merry Christmas!</h3>
+    <hr />
+    <p>
+      크리스마스 카드 MERRY CHRISTMAS~
+    </p>
+    <div>
+      <img
+      id="트리"
+      src="media/christmastree.png"
+        width="500px"
+        height="700px"
+        alt="크리스마스 트리"
+        style="left: 120px; top: 140px;"
+       /> 
+       <div>
+        <img 
+       id="카드배경"
+      src="media/클마 배경.gif"
+      width="1200px"
+      height="700px"
+      alt="배경"
+      />
+      </div>
+      <img id="box1" src="media/선물상자1.png" width="80" height="80" alt="선물상자1" />
+      <img id="box2" src="media/선물상자2.png" width="80" height="80" alt="선물상자2" />
+      <img id="box3" src="media/선물상자3.png" width="80" height="80" alt="선물상자3" />
+      <img id="box4" src="media/선물상자4.png" width="80" height="80" alt="선물상자4" />
+      <p style="left: 150px; top: 300px;">
+       <span>M</span> 
+      </p>
+      <p style="left: 190px; top: 300px;">
+        <span>E</span> 
+      </p>
+      <p style="left: 230px; top: 300px;">
+        <span>R</span> 
+      </p>
+      <p style="left: 270px; top: 300px;">
+        <span>R</span> 
+      </p>
+      <p style="left: 310px; top: 300px;">
+        <span>Y</span> 
+      </p>
+      <p style="left: 150px; top: 385px;">
+        <span>X</span> 
+      </p>
+      <p style="left: 190px; top: 400px;">
+        <span>-</span> 
+      </p>
+      <p style="left: 230px; top: 385px;">
+        <span>M</span> 
+      </p>
+      <p style="left: 270px; top: 400px;">
+        <span>A</span> 
+      </p>
+      <p style="left: 310px; top: 385px;">
+        <span>S</span> 
+      </p>
+      <div id="hm02">
+        hm02 강태민
+    </div>
+    <div id="fixed">
+      <span>크리스마스엔 좋은일만 가득하길~</span>
+    </div>
+  </div>
+  <hr>
+  <audio src="media/Last Christmas.mp3" controls autoplay loop>
+  </audio>
+  </body>
+</html>
