@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm02 : Javascript-student.html</title>
+    <style>
+    </style>
+    <script>
+        var student = {
+            id: "hm02",
+            name: "GangTaeMin",
+            grade: 3.26,
+            age: "21",
+            contact: "010-3857-xxxx",
+            adress: "South Korea",
+            email: "xoals3857@naver.com"
+        };
+    </script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3>student 객체를 리터럴 표기 방식으로 작성하기</h3>
+    <hr />
+    <script>
+        document.write("student's id : " + "<strong>" + student.id + "</strong>" + "<br>");
+        document.write("studnet's name : " + "<strong>" + student.name + "</strong>" + "<br>");
+        document.write("student's grade : " + "<strong>" + student.grade + "</strong>" +"<br>");
+        document.write("student's age : " + "<strong>" + student.age + "</strong>" + "<br>");
+        document.write("studnet's contact : " + "<strong>" + student.contact + "</strong>" + "<br>");
+        document.write("studnet's adress : " + "<strong>" + student.adress + "</strong>" + "<br>");
+        document.write("studnet's email : " + "<strong>" + student.email + "</strong>" + "<br>");
+    </script>
+  </body>
+</html>
